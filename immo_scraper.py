@@ -23,7 +23,7 @@ logging.info('Scraper is starting.')
 
 print("Scraper is starting.")
 
-client = pymongo.MongoClient("mongodb://admin:admin123@dst-shard-00-00-xd93f.mongodb.net:27017,dst-shard-00-01-xd93f.mongodb.net:27017,dst-shard-00-02-xd93f.mongodb.net:27017/test?ssl=true&replicaSet=DST-shard-0&authSource=admin&retryWrites=true&w=majority")
+client = pymongo.MongoClient("mongodb://username:password@dst-shard-00-00-xd93f.mongodb.net:27017,dst-shard-00-01-xd93f.mongodb.net:27017,dst-shard-00-02-xd93f.mongodb.net:27017/test?ssl=true&replicaSet=DST-shard-0&authSource=admin&retryWrites=true&w=majority")
 db = client.IMMO_DATA
 timestamp = datetime.strftime(datetime.now(), '%Y-%m-%d-%H-%M')
 
